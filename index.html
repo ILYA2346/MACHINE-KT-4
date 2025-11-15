@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes movekuzov {
+            from{
+                top: 100px;
+                left: 1200px;
+            }
+            50% { 
+                top: 100px;
+                left: 50px;
+            }
+            to{
+                top: 100px;
+                left: 1200px;
+            }
+        }
+
+        @keyframes movekrysha {
+            from{
+                top: 80px;
+                left: 1225px;
+            }
+            50% { 
+                top: 80px;
+                left: 75px;
+            }
+            to{
+                top: 80px;
+                left: 1225px;
+            }
+        }
+
+        @keyframes movekoleso1 {
+            from{
+                top: 135px;
+                left: 1210px;
+            }
+            50% { 
+                top: 135px;
+                left: 60px;
+            }
+            to{
+                top: 135px;
+                left: 1210px;
+            }
+        }
+        @keyframes movekoleso2 {
+            from{
+                top: 135px;
+                left: 1260px;
+            }
+            50% { 
+                top: 135px;
+                left: 100px;
+            }
+            to{
+                top: 135px;
+                left: 1260px;
+            }
+        }
+
+        body{
+            margin-left: 0px;
+            margin-right: 0px;
+        }
+        p{
+            animation: move-text 20s infinite linear;
+            font-size: large;
+            position: absolute;
+        }
+        .green{
+            background-color: green;
+            height: 100px;
+            width: 100%;
+            position: absolute;
+            top: 150px;
+        }
+        .sky{
+            background-color: rgb(90, 180, 215);
+            height: 30px;
+            width: 100%;
+            position: absolute;
+            top: 0px;
+        }
+
+        .kuzov{
+            height: 50px;
+            width: 100px;
+            position: absolute;
+            background-color: black;
+            animation: movekuzov 10s infinite linear;
+        }
+        .krysha{
+            height: 20px;
+            width: 50px;
+            position: absolute;
+            background-color: black;
+            animation: movekrysha 10s infinite linear;
+        }
+        .koloso1{
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+            position: absolute;
+            background-color: red;
+            animation: movekoleso1 10s infinite linear;
+            z-index: 110;
+        }
+        .koloso2{
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+            position: absolute;
+            background-color: red;
+            animation: movekoleso2 10s infinite linear;
+            z-index: 110;
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <div class="kuzov"></div>
+    <div class="krysha"></div>
+    <div class="koloso1"></div>
+    <div class="koloso2"></div>
+    <div class="green"></div>
+    <div class="sky"></div>
+</body>
+</html>
